@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-with, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/estilos.css">
+    <title>Cristian Mouguelar</title>
+    <link rel="shortcut icon" type="image/png" href="../img/imageonline-co-transparentimage2.png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Kanit&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        
+        <nav class="barra_navegacion_nav">
+            <div class = "barra_navegacion_nav_div">
+
+                <a class="barra_navegacion_nav_div_a" href="../index.html">
+                    <img src="../img/logo_fotografia.png" alt="logo_fotografia" width="79px" height="69px">  
+                        Cristian Mouguelar
+                
+                </a>
+            </div>
+
+            <div class="barra_navegacion_menu">
+                <ul class="menu">
+                    <li>
+                        <a class="primer_menu" href="..//index.html">INICIO</a>
+                    </li>
+                    <li>
+                        <a href="../pages/acercade.html">ACERCA DE</a>
+                    </li>
+                    <li>
+                        <a href="../pages/portfolio.html">PORTFOLIO</a>
+                    </li>
+                    <li>
+                        <a href="../pages/referentes.html">REFERENTES</a>
+                    </li>
+                    <li>
+                        <a  href="../pages/contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!--Inicio MAIN -->
+    <main>
+        <section>
+            <!-- TITULO Y FOTOS Y FORMULARIO CONTACTO -->
+            <h1 class="fotografia_hobby">Contacto...</p>
+
+            <div class = "contacto">
+                <div class="fotos_pagina_principal">
+                    <img class = "foto_mia_brindis" src="../img/foto_mia_brindis.jpg" alt="autoretrato">
+                </div>            
+                    
+                    
+                <!-- FORMULARIO DE CONTACTO-->
+                <div class="formulario_contacto">
+
+                    <div class="formulario">      
+                        <h3>
+                            Charlemos
+                        </h3>
+                                
+                        <form action="" method="post">       
+                
+                            <p>
+                                <label for="nombre" class="titulos_form_contacto">Nombre y Apellido
+                                    <span class="obligatorio">
+                                        *
+                                    </span>
+                                </label>
+                                <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre y apellido">
+                            </p>
+                            
+                            <p>
+                                <label for="email" class="titulos_form_contacto">Email
+                                    <span class="obligatorio">
+                                        *
+                                    </span>
+                                </label>
+                                <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                            </p>
+                        
+                            <p>
+                                <label for="mensaje" class="titulos_form_contacto">Mensaje
+                                    <span class="obligatorio">
+                                        *
+                                    </span>
+                                </label>                     
+                                <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje"      required="obligatorio" placeholder="Deja aquí tu comentario...">
+                                </textarea> 
+                            </p>                    
+                            
+                            <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+
+                            <p class="aviso">
+                                <span class="obligatorio"> * </span>los campos son obligatorios.
+                            </p>          
+                        </form>
+                    </div>  
+                </div>
+            </div>
+        </section>
+
+        <br>
+
+        <div class="subFooter">
+            <div class="volver_arriba">
+                <a class="volver_arriba_texto" href="#header">Ir arriba</a>
+            </div>
+            <div>
+                <a class="volver_arriba_whatsapp" href="">
+                    <img src="../img/logo_whatsapp_transparente.png" alt="logo whatsapp" width="64px" height="64px">
+                </a>
+            </div>
+        </div>
+    
+    </main>
+    <!--Fin MAIN-->
+
+    <!--Inicio Pie de Pagina-->
+    <footer>
+        <a class="footer_a1" href="https://www.facebook.com/cristian.mouguelar" target="_blank" >
+            <img src="../img/logo_facebook_transparente.png" alt="logo facebook" width="34px" height="32px">
+        </a>
+        <a class="footer_a2" href="https://www.instagram.com/cristian.mouguelar" target="_blank" >
+            <img src="../img/logo_instagram_transparente.png" alt="logo facebook" width="34px" height="32px">
+        </a>
+        <a class="footer_a3" href="mailto:cmouguelar@gmail.com" target="_blank" >
+            <img src="../img/logo_mail_transparente.png" alt="logo facebook" width="34px" height="32px">
+        </a>
+    </footer>
+    <!--Fin Pie de Pagina-->
+
+    <!-- LINK A JAVASCRIPT BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
