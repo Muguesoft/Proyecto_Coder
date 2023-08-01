@@ -227,7 +227,7 @@ h5{
 
 .carousel-item-img{
   object-fit: scale-down;
-  height: 85vh;
+  /*height: 85vh;*/
   width: 100%;
 }
 
