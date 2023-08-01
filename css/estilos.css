@@ -158,25 +158,26 @@ label{
   font-size: 13px;
 }
 
-button{
-  height: 45px; 
+.boton_formulario{
+  height: 45px;
   padding-left: 5px;
-  padding-right: 5px;   
-  margin-bottom: 20px; 
-  margin-top: 10px;   
+  padding-right: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
   text-transform: uppercase;
-  background-color: #062837; 
-  border-color: #062837; 
-  border-style: solid; 
-  border-radius: 10px;  
-  width: 405px;   
+  /*background-color: #062837; 
+  border-color: #062837; */
+  border-style: solid;
+  border-radius: 10px;
+  width: 405px;
   cursor: pointer;
 }
 
 
-button p{
+.boton_formulario p{
   color: #fff; 
-  font-family: 'Kanit', sans-serif;;
+  font-family: 'Kanit', sans-serif;
+  padding-top: 6px;
 }
 
 
@@ -226,7 +227,7 @@ h5{
 
 .carousel-item-img{
   object-fit: scale-down;
-  /*height: 85vh;*/
+  height: 85vh;
   width: 100%;
 }
 
@@ -410,3 +411,6 @@ p{
   border-color: white; 
 }
 
+.contenedor_referentes{
+  width: 0 auto;
+}
