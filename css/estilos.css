@@ -14,6 +14,26 @@ main{
   font-size: small;
 }
 
+.navbar-fondo{
+  background-color: #062837;
+}
+
+.cristian-mouguelar{
+  font-size: 1.7rem;
+  color: white;
+  font-family: 'Bad Script', cursive;
+}
+
+.cristian-mouguelar:hover{
+   color: white;
+}
+
+.item-menu-a:hover{
+  text-decoration: underline;
+  color: white;
+}
+
+/*
 .barra_navegacion_nav{
     position: relative;
     display: flex;
@@ -53,10 +73,26 @@ main{
     align-items: center;
     text-decoration: none;
     color: white;
-    /*display:inline-block;*/
+    /*display:inline-block;
     text-align: center;
     font-family: 'Kanit', sans-serif;
+}*/
+
+.nav-item a{
+  font-family: 'Kanit', sans-serif;
+  color: white;
+  font-size: 1rem;
 }
+
+
+/*.navbar-nav li a:hover{
+  background-color: #EADDD7;
+  border-radius: 10px;
+  color: #062837;
+  /*padding: 5px;
+  text-decoration: underline ;
+  text-shadow: 1px 1px 4px #EADDD7;
+}*/
 
 .menu{
     background-color: #062837;
@@ -384,10 +420,15 @@ p{
   color: #062837;
 }
 
+.contedor_acerca_de_mi img{
+  padding: 10px;
+}
+
 .contenedor_texto_acerca_de_mi{
   width: 600px;
 }
 
+/*
 .contenedor_acerca_de_mis_favoritas{
   display: flex;
   flex-wrap: wrap;
@@ -400,8 +441,65 @@ p{
   object-fit: scale-down;
   padding: 3px;
   opacity: .7;
+}*/
+
+/*
+.contenedor_acerca_de_mis_favoritas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 10px;
+}*/
+
+.contenedor_acerca_de_mis_favoritas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 10px;
 }
 
+/*
+.contenedor_item_acerca_de_mis_favoritas {
+  width: 100%;
+}*/
+
+.contenedor_item_acerca_de_mis_favoritas {
+  height: 0;
+  padding-bottom: 100%;
+}
+@media only screen 
+  and (max-width: 576px) {
+  .contenedor_acerca_de_mis_favoritas {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+    grid-gap: 5px;
+  }
+
+  .cristian-mouguelar{
+    font-size: 1.2rem;
+  }
+
+  .cristian-mouguelar img{
+    width: 59px;
+    height: auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .contenedor_acerca_de_mis_favoritas {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+    grid-gap: 2px;
+  }
+}
+
+.contenedor_item_acerca_de_mis_favoritas img {
+  width: 100%;
+  height: auto;
+  opacity: .7;
+}
+
+/*
 .contenedor_acerca_de_mis_favoritas img:hover{
   opacity: 1;
   padding: 0px;
@@ -409,8 +507,13 @@ p{
   border-style: solid; 
   border-width: 3px; 
   border-color: white; 
-}
+}*/
 
 .contenedor_referentes{
   width: 0 auto;
 }
+
+
+.btn-menu{
+  color:white;
+ }

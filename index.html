@@ -15,6 +15,7 @@
 <body>
     <header id="header">
         
+      <!--
         <nav class="barra_navegacion_nav">
             <div class = "barra_navegacion_nav_div">
                 <a class="barra_navegacion_nav_div_a" href="index.html">
@@ -43,50 +44,46 @@
                 </ul>
             </section>
         </nav>
+        -->
 
-        <!--
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        
+        <nav class="navbar navbar-expand-lg navbar-fondo">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+              <a class="navbar-brand cristian-mouguelar" href="index.html">
+                <img src="./img/logo_fotografia.png" alt="logo_fotografia" width="79px" height="69px">  
+                    Cristian Mouguelar
+              </a>
+
+              <button class="navbar-toggler btn-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
+
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item item-menu">
+                    <a class="nav-link p-3 item-menu-a" aria-current="page" href="index.html">INICIO</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">ACERCA DE</a>
+                    <a class="nav-link p-3 item-menu-a" href="./pages/acercade.html">ACERCA DE</a>
                   </li>
-                  <!--
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li> 
+                  
                   <li class="nav-item">
-                    <a class="nav-link" href="#">PORTFOLIO</a>
+                    <a class="nav-link p-3 item-menu-a" href="./pages/portfolio.html">PORTFOLIO</a>
                   </li>
 
                   <li class="nav-item">
-                    <a class="nav-link" href="#">REFERENTES</a>
+                    <a class="nav-link p-3 item-menu-a" href="./pages/referentes.html">REFERENTES</a>
                   </li>
 
                   <li class="nav-item">
-                    <a class="nav-link" href="#">CONTACTO</a>
+                    <a class="nav-link p-3 item-menu-a" href="./pages/contacto.html">CONTACTO</a>
                   </li>
 
                 </ul>
               </div>
             </div>
-        </nav> -->
+        </nav>
     </header>
 
     <!--Inicio MAIN -->
@@ -144,7 +141,7 @@
             </div> 
 
             
-            <!-- FRASES DE FOTOGRAFOS FAMOSOS-->
+            <!-- FRASES DE FOTOGRAFOS FAMOSOS -->
             <article>
                 <h2 class="titulo_frases">Grandes de la fotografía dijeron:</h2>    
 
@@ -166,11 +163,23 @@
                 <p class="frase_fotografo">“Cuando fotografías a una persona en color, fotografías su ropa, cuando lo haces en blanco y negro, fotografías su alma”.</p>
                 <p class="fotografo_frase">Ted Grant</p>
             </article>
+           
         </section>        
       
-        <!-- <hr> -->
-              
-        <!-- FORMULARIO DE CONTACTO-->
+        <!-- <hr> 
+        <form >
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+        </form> -->
+
+
+        <!-- FORMULARIO DE CONTACTO -->
         <section class="formulario_contacto">
 
             <div class="formulario">      
@@ -179,7 +188,6 @@
               </h3>
                         
                 <form action="" method="post">       
-        
                     <p>
                         <label for="nombre" class="titulos_form_contacto">Nombre y Apellido
                             <span class="obligatorio">
