@@ -397,7 +397,10 @@ p{
     grid-template-rows: repeat(15, 1fr);
     grid-gap: 5px;
   }
-
+  .contenedor_item_acerca_de_mis_favoritas img {
+    opacity: 1;
+  }
+  
   .cristian-mouguelar{
     font-size: 1.2rem;
   }
@@ -429,6 +432,20 @@ p{
     width: 310px;
   }
   
+  .imagen_acera_de_mi{
+    margin-bottom: 15px;
+  }
+
+  .imagen_acera_de_mi img{
+    width: 350px;
+    height: auto;
+  }
+
+  .contenedor_texto_acerca_de_mi{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .accordion-item{
     width: 350px;
     margin-left: 10px;
