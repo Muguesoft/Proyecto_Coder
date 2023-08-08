@@ -397,6 +397,12 @@ p{
  }
 
  
+ @media only screen 
+ and (min-width: 576px) {
+  .acordeon-total{
+    width: 600px
+  }
+ }
 
  @media only screen 
   and (max-width: 576px) {
@@ -455,20 +461,18 @@ p{
     padding-right: 10px;
   }
 
-  /*
-  .accordion{
-    display:flex;
-    align-items: center;
-    justify-self:center;
-    }*/
-
+  
+  .acordeon-total{
+    width: 350px;
+  }
+/*
   .accordion-item{
     width: 350px;
-    /* margin-right:auto; */
+    /* margin-right:auto; 
     margin-left: 10px;
   }
 
   .tarjeta{
     margin: 10px;
-  }
+  }*/
 }
