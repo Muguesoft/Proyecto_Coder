@@ -378,9 +378,17 @@ p{
   border-color: white; 
 }
 
+.card{
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+/*
 .contenedor_referentes{
   width: 0 auto;
-}
+}*/
 
 
 .container-tres-rayitas{
@@ -399,6 +407,7 @@ p{
   }
   .contenedor_item_acerca_de_mis_favoritas img {
     opacity: 1;
+    padding: 5px;
   }
   
   .cristian-mouguelar{
@@ -446,21 +455,16 @@ p{
     padding-right: 10px;
   }
 
+  /*
+  .accordion{
+    display:flex;
+    align-items: center;
+    justify-self:center;
+    }*/
+
   .accordion-item{
     width: 350px;
-    margin-left: 10px;
-  }
-
-  .tarjeta{
-    width: 10rem;
+    /* margin-right:auto; */
+    margin-left: 40px;
   }
 }
-
-/*
-  @media (max-width: 400px) {
-    .contenedor_acerca_de_mis_favoritas {
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: repeat(15, 1fr);
-      grid-gap: 2px;
-    }
-  }*/
