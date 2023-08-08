@@ -484,6 +484,16 @@ p{
     padding: 5px;
   }
   
+  .container-contacto {  
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-template-areas:
+      "foto1"
+      "foto2"
+      "area-contacto";
+  }
+
   .cristian-mouguelar{
     font-size: 1.2rem;
   }
@@ -529,18 +539,7 @@ p{
     padding-right: 10px;
   }
 
-  
   .acordeon-total{
     width: 350px;
   }
-/*
-  .accordion-item{
-    width: 350px;
-    /* margin-right:auto; 
-    margin-left: 10px;
-  }
-
-  .tarjeta{
-    margin: 10px;
-  }*/
 }
