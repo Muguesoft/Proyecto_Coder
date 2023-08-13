@@ -1,0 +1,58 @@
+main{
+    section{
+        .container-contacto {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-auto-columns: 1fr;
+            gap: 3px 3px;
+            grid-auto-flow: row;
+            justify-content:center;
+            align-content: center;
+            justify-items: center;
+            align-items: start;
+            grid-template-areas:
+              "foto1 foto2"
+              "area-contacto area-contacto";
+
+            .foto1 {
+                grid-area: foto1;
+                height: 0;
+                margin: 10px;
+                
+                img{
+                    border-radius: 5%;
+                    width: 100%;
+                    height: auto;}
+            }
+            
+            .foto2 { 
+                grid-area: foto2;
+                height: 0; 
+                margin:10px;
+                img{
+                    border-radius: 5%;
+                    width: 100%;
+                    height: auto;
+                    }
+            }
+            
+              
+            .area-contacto {
+                grid-area: area-contacto;
+                height: auto;
+                margin-top: -6rem;
+
+                .contacto{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .form-pag-contacto{
+                        padding-right: 2rem; 
+                      }
+                  }
+            }
+        }
+    }
+}

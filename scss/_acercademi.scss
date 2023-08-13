@@ -1,0 +1,30 @@
+main{
+    section{ 
+        .contenedor_acerca_de{
+            @include caja-flex(space-evenly,flex-start,wrap,row);
+
+            .imagen_acerca_de_mi{
+                margin-bottom: 15px;
+                img{
+                    width: 550px;
+                    height: auto;
+                }
+            }
+            .contenedor_texto_acerca_de_mi{
+                width: 600px;
+                .texto_acerca_de_mi{
+                    text-align: justify;
+                    font-size: 1rem;
+                    font-family: $letra_script;
+                    font-style: normal;
+                    font-weight: 500;
+                    color: $color_gris;
+                    line-height: 2;
+                    em{
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}        

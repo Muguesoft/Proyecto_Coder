@@ -1,0 +1,37 @@
+$letra_script: 'Bad Script', cursive;
+$letra_formal: 'Kanit', sans-serif;
+$color_fondo_oscuro: #062837;
+$color_fondo_claro: #EADDD7;
+$color_casi_negro: #0e0e0e;
+$color_blanco:white;
+$color_casi_blanco: #dfd1cb;
+$sombra_negra: 1px 1px 2px black;
+$sombra_blanca: 1px 1px 2px white;
+$color_gris: #222229;
+$color_gris_mas_claro:#4d4d4d;
+$color_fondo_charlemos: #F8F4F2;
+$color_azul_claro:  #10497F;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: $color_fondo_claro;
+}
+
+// MIXIN CAJA-FLEX
+@mixin caja-flex($justify-content, $align-items, $wrap, $flex-direction){
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    flex-wrap: $wrap;
+    flex-direction: $flex-direction;
+}
+
+span{
+    color: #ab4493; 
+  }

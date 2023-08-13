@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-with, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/estilos.css">
     <title>Cristian Mouguelar</title>
     <link rel="shortcut icon" type="image/png" href="../img/imageonline-co-transparentimage2.png"/>
@@ -66,10 +67,11 @@
                 </div>
 
                 <div class="area-contacto">
+                    
                     <div class = "contacto">
                     
                         <!-- FORMULARIO DE CONTACTO -->
-                        <div class="formulario_contacto">
+                        <div class="formulario_contacto form-pag-contacto" data-aos="flip-left" data-aos-duration="2800">
         
                             <div class="formulario">      
                                 <h3>
@@ -79,7 +81,7 @@
                                 <form action="" method="post">       
                         
                                     <p>
-                                        <label for="nombre" class="titulos_form_contacto">Nombre y Apellido
+                                        <label for="nombre" class="titulos_form_contacto pag-contacto">Nombre y Apellido
                                             <span class="obligatorio">
                                                 *
                                             </span>
@@ -88,7 +90,7 @@
                                     </p>
                                     
                                     <p>
-                                        <label for="email" class="titulos_form_contacto">Email
+                                        <label for="email" class="titulos_form_contacto pag-contacto">Email
                                             <span class="obligatorio">
                                                 *
                                             </span>
@@ -97,7 +99,7 @@
                                     </p>
                                 
                                     <p>
-                                        <label for="mensaje" class="titulos_form_contacto">Mensaje
+                                        <label for="mensaje" class="titulos_form_contacto pag-contacto">Mensaje
                                             <span class="obligatorio">
                                                 *
                                             </span>
@@ -108,7 +110,7 @@
                                     
                                     <button class="btn btn-primary boton_formulario" type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
         
-                                    <p class="aviso">
+                                    <p class="aviso pag-contacto">
                                         <span class="obligatorio"> * </span>los campos son obligatorios.
                                     </p>          
                                 </form>
@@ -117,64 +119,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- TITULO Y FOTOS Y FORMULARIO CONTACTO -->
-            <!--
-            <h1 class="fotografia_hobby">Contacto...</p>
-
-            <div class="fotos_pagina_principal">
-                <img class = "foto_mia_brindis" src="../img/foto_mia_brindis.jpg" alt="autoretrato">
-            </div> 
-
-            <div class = "contacto">
-                    
-                <!-- FORMULARIO DE CONTACTO
-                <div class="formulario_contacto">
-
-                    <div class="formulario">      
-                        <h3>
-                            Charlemos
-                        </h3>
-                                
-                        <form action="" method="post">       
-                
-                            <p>
-                                <label for="nombre" class="titulos_form_contacto">Nombre y Apellido
-                                    <span class="obligatorio">
-                                        *
-                                    </span>
-                                </label>
-                                <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre y apellido">
-                            </p>
-                            
-                            <p>
-                                <label for="email" class="titulos_form_contacto">Email
-                                    <span class="obligatorio">
-                                        *
-                                    </span>
-                                </label>
-                                <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
-                            </p>
-                        
-                            <p>
-                                <label for="mensaje" class="titulos_form_contacto">Mensaje
-                                    <span class="obligatorio">
-                                        *
-                                    </span>
-                                </label>                     
-                                <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje"      required="obligatorio" placeholder="Deja aquí tu comentario...">
-                                </textarea> 
-                            </p>                    
-                            
-                            <button class="btn btn-primary boton_formulario" type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
-
-                            <p class="aviso">
-                                <span class="obligatorio"> * </span>los campos son obligatorios.
-                            </p>          
-                        </form>
-                    </div>  
-                </div>
-            </div> -->
         </section>
 
         <br>
@@ -209,5 +153,10 @@
 
     <!-- LINK A JAVASCRIPT BOOTSTRAP-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!-- LINK A JAVASCRIPT AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

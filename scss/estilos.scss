@@ -1,0 +1,263 @@
+@import "global";
+@import "acercade";
+@import "acercademi";
+@import "acercademisfavoritas";
+@import "referentes";
+@import "contacto";
+@import "mediaqueries";
+
+main{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+  }
+
+header{
+    .navbar-fondo{
+      background-color: $color_fondo_oscuro;
+        .container-fluid{
+            .cristian-mouguelar{
+                font-size: 1.7rem;
+                color:$color_blanco;
+                font-family:$letra_script;
+            }
+            .container-tres-rayitas{
+                border-color:$color_blanco;
+                border-width: 3px;
+                
+                .tres-rayitas{
+                    background-image: url(../img/tres_rayitas.jpg);
+                    background-size: 180%;
+                }
+            }
+            .collapse{
+                .navbar-nav{
+                    .nav-item{
+                        .item-menu-a{
+                            font-family:$letra_formal;
+                            color: $color_blanco;
+                            font-size: 1rem;
+                            &:hover{
+                                color: $color_blanco;
+                                text-decoration: underline;
+                                text-shadow: 1px 1px 4px $color_fondo_claro;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+p{
+    font-size: 14px; 
+    color: $color_casi_negro; 
+}
+
+h1{
+    font-size: 14px;  
+    text-align: center; 
+    padding-bottom: 20px; 
+    color:$color_casi_negro;
+    font-family: $letra_formal;
+    font-weight: 100;
+}
+  
+  
+  
+h3{
+font-family: $letra_formal;
+font-size: 2rem; 
+text-align: center;
+padding-bottom: 30px;
+color: $color_casi_negro;   
+}
+
+
+
+h5{
+font-family: $letra_formal;
+font-size: 1.5rem; 
+text-align: center;
+color: $color_casi_negro;   
+}
+
+
+main{
+    section{
+        .fotografia_hobby{
+            padding-top: 20px;
+            text-align: center;
+            font-family: $letra_formal;
+            font-size: 1.6rem;
+            color:$color_casi_negro;
+            }
+        }
+        .carousel{
+            .carousel-inner{
+                .carousel-item{
+                    .carousel-item-img{
+                        object-fit: scale-down;
+                        width: 100%;
+                    }
+                    .carousel-caption{
+                        .blanco{
+                            color: $color_casi_blanco;
+                        }
+                        .shadow_black{
+                            text-shadow:$sombra_negra;
+                        }
+                        .shadow_white{
+                            text-shadow: $sombra_blanca;
+                        }
+                    }
+                }
+            }
+        }
+        article{
+            .titulo_frases{
+                padding: 10px;
+                padding-top: 30px;
+                font-size: 1.3rem;
+                font-family: $letra_formal;
+            }
+            .frase_fotografo{
+                font-size: 1.3rem;
+                font-family: $letra_script;
+                font-style: italic;
+                padding-left: 20px;
+                padding-right: 20px;
+                color: $color_gris;
+            }
+            .fotografo_frase{
+                font-family: $letra_formal;
+                font-size: medium;
+                padding-bottom: 35px;
+                padding-left: 30px;
+                font-weight: 500;
+                color: $color_gris_mas_claro;
+            }
+        }
+    .formulario_contacto{
+        width: 450px; 
+        height: auto;
+        margin: 20px auto;
+        border-radius: 10px;  
+        padding-top: 20px;
+        padding-bottom: 20px;  
+        background-color: $color_fondo_charlemos;
+        padding-left: 20px; 
+
+        .formulario{
+            form{
+                p{
+                    label{
+                        display: block; 
+                        float: center;  
+                        font-family: $letra_formal;
+                    }
+
+                    .titulos_form_contacto{
+                        font-size: 13px;
+                    }
+
+                    input{
+                        background-color: #fbfbfb; 
+                        width: 408px; 
+                        height: 40px; 
+                        border-radius: 5px;  
+                        border-style: solid; 
+                        border-width: 1px; 
+                        border-color: #ab4493; 
+                        margin-top: 10px;  
+                        padding-left: 10px;
+                        margin-bottom: 20px; 
+                    }
+
+                    textarea{
+                        background-color: #fbfbfb; 
+                        width: 405px; 
+                        height: 150px; 
+                        border-radius: 5px;  
+                        border-style: solid; 
+                        border-width: 1px; 
+                        border-color: #ab4493; 
+                        margin-top: 10px;  
+                        padding-left: 10px;
+                        margin-bottom: 20px; 
+                        padding-top: 15px; 
+                    }
+                }
+
+                .boton_formulario{
+                    height: 45px;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                    margin-bottom: 20px;
+                    margin-top: 10px;
+                    text-transform: uppercase;
+                    background-color: $color_fondo_oscuro; 
+                    border-color: $color_fondo_oscuro; 
+                    border-style: solid;
+                    border-radius: 10px;
+                    width: 405px;
+                    cursor: pointer;
+
+                    p{
+                        color: $color_blanco; 
+                        font-family: $letra_formal;
+                        padding-top: 6px;
+                    }
+                }
+            }
+        } 
+    }
+    .subFooter{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        align-content: center;
+        justify-content: space-between;
+
+        .volver_arriba{
+            display: flex;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            align-items:end;
+            justify-content: space-between;
+
+            .volver_arriba_texto{
+                text-decoration: none;
+                color: #0e0e0e;
+                text-align: left;
+                padding-left: 10px;
+              }
+          }
+        
+        .volver_arriba_whatsapp{
+        position: sticky;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        }
+    }    
+}
+
+footer{
+    background-color:$color_azul_claro;
+    color: $color_blanco;
+    display: flex;
+    justify-content: flex-start;
+
+    .footer_a1{
+        padding: 10px;
+    }
+    
+    .footer_a2{
+        padding: 10px;
+    }
+    
+    .footer_a3{
+        padding: 10px;
+    }
+}

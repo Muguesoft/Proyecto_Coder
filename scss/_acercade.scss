@@ -1,0 +1,49 @@
+main{
+    section{
+        .contenedor_acerca_de{
+            @include caja-flex(space-evenly,center,wrap,row);
+
+            .contenedor_acerca_de_mi{
+                position: relative;
+                text-align: center;
+                width: 600px;
+                
+                }
+                
+                .imagenes_acerca_de{
+                    margin: 10px;
+                    height: 450px;
+                    border-radius: 5%;
+                    border-color: $color_blanco;
+                    border-style: solid;
+                  }
+
+                a {
+                    position: absolute;
+                    bottom: 30px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    padding-top: 12px;
+                    padding-bottom: 12px;
+                    padding-left: 24px;
+                    padding-right: 24px;
+                    color: $color_blanco;
+                    text-decoration: none;
+                    border-color:$color_casi_blanco;
+                    border-width: 2px;
+                    border-style: solid ;
+                    font-family: $letra_formal;
+                    border-radius: 5px;
+                    letter-spacing: 1px;
+
+                    &:hover{
+                        background-color: $color_casi_blanco;
+                        border-radius: 10px;
+                        color: $color_fondo_oscuro;
+                        opacity: 0.7;
+                    }
+                }
+                
+            }
+        }
+    }
