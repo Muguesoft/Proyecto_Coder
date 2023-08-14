@@ -4,7 +4,7 @@
 @import "acercademisfavoritas";
 @import "referentes";
 @import "contacto";
-@import "mediaqueries";
+
 
 main{
     font-family: Arial, Helvetica, sans-serif;
@@ -261,3 +261,5 @@ footer{
         padding: 10px;
     }
 }
+
+@import "mediaqueries";

@@ -9,59 +9,95 @@
     margin-left: 0.5rem;}
  }
 
- @media only screen 
+@media only screen 
   and (max-width: 576px) {
-  .contenedor_acerca_de_mis_favoritas {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(15, 1fr);
-    grid-gap: 5px;
-  }
-  .contenedor_item_acerca_de_mis_favoritas img {
-    opacity: 1;
-    padding: 5px;
-  }
+    
+    header{
+      .navbar{
+        .container-fluid{
+          .cristian-mouguelar{
+            font-size: 1.3rem;
   
-  .container-contacto {  
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-auto-columns: 1fr;
-    grid-template-areas:
-      "foto1"
-      "foto2"
-      "area-contacto";
-  }
+            img{
+              width: 59px;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
 
-  .cristian-mouguelar{
-    font-size: 1.4rem;
-  }
+    main{
+      section{
+        .contenedor_acerca_de{
+          .imagen_acerca_de_mi{
+            margin-bottom: 15px;
+            img{
+              width: 350px;
+              height: auto;
+            }
+          }
+        }
+        .contenedor_acerca_de_mis_favoritas {
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: repeat(15, 1fr);
+          grid-gap: 5px;
 
-  .cristian-mouguelar img{
-    width: 59px;
-    height: auto;
-  }
+          .contenedor_item_acerca_de_mis_favoritas img {
+            opacity: 1;
+            padding: 5px;
+          }
+        }
+        article{
+          .frase_fotografo{
+            font-size: 1rem;
+            padding-left: 10px;
+            padding-right: 10px;
+          }
+        }
 
-  .frase_fotografo{
-    font-size: 1rem;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
+        .container-contacto {  
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
+          grid-auto-columns: 1fr;
+          grid-template-areas:
+            "foto1"
+            "foto2"
+            "area-contacto";
+            
+            .foto2 img{
+              margin-top: -8rem;
+            }
 
+            .area-contacto {
+              margin-top: -17rem;
+            }
+        }
+      }
+
+      .formulario_contacto{
+        width: 350px;
+
+        .formulario{
+          form{
+            p{
+              input{
+                width: 310px;
+              }
+            textarea{
+              width: 310px;
+              }
+            }
+            .boton_formulario{
+              width: 310px;
+            }
+          }
+        }
+      }
+    }
   
-
-  input{
-    width: 310px;
-  }
-
-  textarea{
-    width: 310px;
-  }
-
-  .boton_formulario{
-    width: 310px;
-  }
   
-  
-
+    
   .contenedor_texto_acerca_de_mi{
     padding-left: 10px;
     padding-right: 10px;
@@ -71,17 +107,10 @@
     width: 350px;
   }
 
-  .foto2 img{
-    margin-top: -12rem;
-  }
-
-  .area-contacto {
-    margin-top: -12rem;
-    }
-
+  
   .pag-contacto{
     text-align: left;
-    margin-left: 1rem;
+    margin-left: 0.5rem;
   }
   
 }
