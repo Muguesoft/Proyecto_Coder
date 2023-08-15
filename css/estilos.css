@@ -142,6 +142,63 @@ main section .container-contacto {
       main section .container-contacto .area-contacto .contacto .form-pag-contacto {
         padding-right: 2rem; }
 
+main section .contenedor_portfolio {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px; }
+  main section .contenedor_portfolio .contenedor_item_portfolio {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: relative;
+    text-align: center; }
+    main section .contenedor_portfolio .contenedor_item_portfolio img {
+      width: 100%;
+      height: auto;
+      opacity: 1;
+      border-radius: 5px;
+      object-fit: cover;
+      transition: transform 1s ease-out;
+      /*&:hover{
+                        padding: 0px;
+                        border-radius: 5px;  
+                        border-style: solid; 
+                        border-width: 3px; 
+                        border-color: white; 
+                        transform: scale(1.2);
+                        opacity:1;
+                    }*/ }
+    main section .contenedor_portfolio .contenedor_item_portfolio a {
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding-top: 12px;
+      padding-bottom: 12px;
+      padding-left: 24px;
+      padding-right: 24px;
+      color: white;
+      text-decoration: none;
+      border-color: #dfd1cb;
+      border-width: 2px;
+      border-style: solid;
+      box-shadow: 1px 1px 10px black;
+      font-family: "Kanit", sans-serif;
+      border-radius: 5px;
+      letter-spacing: 1px;
+      text-shadow: 1px 1px 2px black; }
+      main section .contenedor_portfolio .contenedor_item_portfolio a .sombra_negra {
+        text-shadow: 1px 1px 2px black; }
+      main section .contenedor_portfolio .contenedor_item_portfolio a:hover {
+        background-color: #dfd1cb;
+        border-radius: 10px;
+        color: #062837;
+        opacity: 0.7;
+        text-shadow: none; }
+
 main {
   font-family: Arial, Helvetica, sans-serif;
   font-size: small; }
@@ -349,6 +406,10 @@ footer {
     main section .contenedor_acerca_de_mis_favoritas .contenedor_item_acerca_de_mis_favoritas img {
       opacity: 1;
       padding: 5px; }
+  main section .contenedor_portfolio {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap: 5px; }
   main section article .frase_fotografo {
     font-size: 1rem;
     padding-left: 10px;
