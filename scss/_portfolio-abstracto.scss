@@ -1,11 +1,11 @@
 main{
     section{
-        .contenedor_acerca_de_mis_favoritas{
+        .contenedor_abstracto{
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(5, 1fr);
+            grid-template-rows: repeat(3, 1fr);
             //grid-gap: 10px;
-            .contenedor_item_acerca_de_mis_favoritas {
+            .contenedor_item_abstracto {
                 height: 0;
                 padding-bottom: 100%;
                 overflow: hidden;

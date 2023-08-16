@@ -75,12 +75,12 @@ main section .contenedor_acerca_de {
 main section .contenedor_acerca_de_mis_favoritas {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-gap: 10px; }
+  grid-template-rows: repeat(5, 1fr); }
   main section .contenedor_acerca_de_mis_favoritas .contenedor_item_acerca_de_mis_favoritas {
     height: 0;
     padding-bottom: 100%;
-    overflow: hidden; }
+    overflow: hidden;
+    margin: 5px; }
     main section .contenedor_acerca_de_mis_favoritas .contenedor_item_acerca_de_mis_favoritas img {
       width: 100%;
       height: auto;
@@ -89,7 +89,6 @@ main section .contenedor_acerca_de_mis_favoritas {
       object-fit: cover;
       transition: transform 1s ease-out; }
       main section .contenedor_acerca_de_mis_favoritas .contenedor_item_acerca_de_mis_favoritas img:hover {
-        padding: 0px;
         border-radius: 5px;
         border-style: solid;
         border-width: 3px;
@@ -146,7 +145,8 @@ main section .contenedor_portfolio {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-gap: 10px; }
+  grid-gap: 10px;
+  margin: 10px; }
   main section .contenedor_portfolio .contenedor_item_portfolio {
     display: flex;
     justify-content: space-evenly;
@@ -159,18 +159,7 @@ main section .contenedor_portfolio {
       width: 100%;
       height: auto;
       opacity: 1;
-      border-radius: 5px;
-      object-fit: cover;
-      transition: transform 1s ease-out;
-      /*&:hover{
-                        padding: 0px;
-                        border-radius: 5px;  
-                        border-style: solid; 
-                        border-width: 3px; 
-                        border-color: white; 
-                        transform: scale(1.2);
-                        opacity:1;
-                    }*/ }
+      border-radius: 5px; }
     main section .contenedor_portfolio .contenedor_item_portfolio a {
       position: absolute;
       bottom: 30px;
@@ -190,14 +179,38 @@ main section .contenedor_portfolio {
       border-radius: 5px;
       letter-spacing: 1px;
       text-shadow: 1px 1px 2px black; }
-      main section .contenedor_portfolio .contenedor_item_portfolio a .sombra_negra {
-        text-shadow: 1px 1px 2px black; }
       main section .contenedor_portfolio .contenedor_item_portfolio a:hover {
         background-color: #dfd1cb;
-        border-radius: 10px;
+        border-radius: 5px;
         color: #062837;
-        opacity: 0.7;
+        opacity: 0.8;
         text-shadow: none; }
+    main section .contenedor_portfolio .contenedor_item_portfolio .sombra_negra {
+      text-shadow: 1px 1px 2px black; }
+
+main section .contenedor_abstracto {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr); }
+  main section .contenedor_abstracto .contenedor_item_abstracto {
+    height: 0;
+    padding-bottom: 100%;
+    overflow: hidden;
+    margin: 5px; }
+    main section .contenedor_abstracto .contenedor_item_abstracto img {
+      width: 100%;
+      height: auto;
+      opacity: .7;
+      border-radius: 5px;
+      object-fit: cover;
+      transition: transform 1s ease-out; }
+      main section .contenedor_abstracto .contenedor_item_abstracto img:hover {
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 3px;
+        border-color: white;
+        transform: scale(1.2);
+        opacity: 1; }
 
 main {
   font-family: Arial, Helvetica, sans-serif;
@@ -257,7 +270,7 @@ main section .fotografia_hobby {
   color: #0e0e0e; }
 
 main .carousel .carousel-inner .carousel-item .carousel-item-img {
-  object-fit: scale-down;
+  object-fit: fill;
   width: 100%; }
 
 main .carousel .carousel-inner .carousel-item .carousel-caption .blanco {
@@ -410,6 +423,9 @@ footer {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(8, 1fr);
     grid-gap: 5px; }
+  main section .contenedor_abstracto {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9, 1fr); }
   main section article .frase_fotografo {
     font-size: 1rem;
     padding-left: 10px;

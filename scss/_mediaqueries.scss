@@ -55,6 +55,11 @@
           grid-gap: 5px;
         }
 
+        .contenedor_abstracto {
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: repeat(9, 1fr);
+          //grid-gap: 5px;
+        }
 
         article{
           .frase_fotografo{
