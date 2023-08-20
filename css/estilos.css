@@ -143,7 +143,7 @@ main section .container-contacto {
 
 main section .contenedor_portfolio {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 10px;
   margin: 10px; }
@@ -191,54 +191,35 @@ main section .contenedor_portfolio {
 main section .contenedor_abstracto {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr); }
+  grid-template-rows: repeat(3, 1fr);
+  gap: 5px 5px;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center; }
   main section .contenedor_abstracto .contenedor_item_abstracto {
+    border: 2px white solid;
     height: 0;
     padding-bottom: 100%;
-    overflow: hidden;
-    margin: 5px; }
+    overflow: hidden; }
     main section .contenedor_abstracto .contenedor_item_abstracto img {
       width: 100%;
       height: auto;
       opacity: .7;
-      border-radius: 5px;
-      object-fit: cover;
       transition: transform 1s ease-out; }
       main section .contenedor_abstracto .contenedor_item_abstracto img:hover {
-        border-radius: 5px;
-        border-style: solid;
-        border-width: 3px;
-        border-color: white;
+        /*border-radius: 5px;  
+                        border-style: solid; 
+                        border-width: 3px; 
+                        border-color: white; */
         transform: scale(1.2);
         opacity: 1; }
 
 main section .contenedor_portfolio_paisajes {
   display: grid;
-  /*grid-template-columns: 1fr 1fr 1fr;
-                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-                //grid-auto-columns: 1fr;
-                gap: 3px 3px;
-                grid-auto-flow: row;
-                justify-content:center;
-                align-content:center;
-                justify-items:center;
-                align-items:center;
-                grid-template-areas:
-                "foto-vert-1 foto-horiz-1 foto-horiz-1"
-                "foto-vert-1 foto-cuad-1 foto-cuad-2"
-                "foto-cuad-3 foto-cuad-4 foto-cuad-5"
-                "foto-horiz-2 foto-horiz-2 foto-cuad-6"
-                "foto-cuad-7 foto-cuad-8 foto-cuad-9"
-                "foto-cuad-10 foto-horiz-3 foto-horiz-3"
-                "foto-horiz-4 foto-horiz-4 foto-cuad-11"
-                "foto-cuad-12 foto-cuad-13 foto-vert-2"
-                "foto-horiz-5 foto-horiz-5 foto-vert-2"
-                "foto-cuad-14 foto-horiz-6 foto-horiz-6"
-                "foto-horiz-7 foto-horiz-7 foto-cuad-15"
-                "foto-cuad-16 foto-horiz-8 foto-horiz-8"
-                ". . .";*/
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repear(3, 1fr);
+  grid-template-rows: repeat(12, 1fr);
   gap: 5px 5px;
   grid-auto-flow: row;
   justify-content: center;
@@ -246,123 +227,154 @@ main section .contenedor_portfolio_paisajes {
   justify-items: center;
   align-items: center;
   grid-template-areas: "foto-vert-1 foto-horiz-1 foto-horiz-1" "foto-vert-1 foto-cuad-2 foto-cuad-1" "foto-cuad-3 foto-cuad-4 foto-cuad-5" "foto-horiz-2 foto-horiz-2 foto-cuad-6" "foto-cuad-7 foto-cuad-8 foto-cuad-9" "foto-cuad-10 foto-horiz-3 foto-horiz-3" "foto-horiz-4 foto-horiz-4 foto-cuad-11" "foto-cuad-12 foto-cuad-13 foto-vert-2" "foto-horiz-5 foto-horiz-5 foto-vert-2" "foto-cuad-14 foto-horiz-6 foto-horiz-6" "foto-horiz-7 foto-horiz-7 foto-cuad-15" "foto-horiz-8 foto-horiz-8 foto-cuad-16"; }
+  main section .contenedor_portfolio_paisajes .foto-horizontal {
+    border: 2px white solid;
+    overflow: hidden; }
+    main section .contenedor_portfolio_paisajes .foto-horizontal img {
+      width: 100%;
+      height: auto;
+      transition: transform 1s ease-out;
+      opacity: 0.7;
+      object-fit: cover; }
+      main section .contenedor_portfolio_paisajes .foto-horizontal img:hover {
+        transform: scale(1.2);
+        opacity: 1; }
+  main section .contenedor_portfolio_paisajes .foto-vertical {
+    border: 2px white solid;
+    overflow: hidden; }
+    main section .contenedor_portfolio_paisajes .foto-vertical img {
+      height: auto;
+      width: 100%;
+      transition: transform 1s ease-out;
+      opacity: 0.7;
+      object-fit: cover; }
+      main section .contenedor_portfolio_paisajes .foto-vertical img:hover {
+        transform: scale(1.2);
+        opacity: 1; }
+  main section .contenedor_portfolio_paisajes .foto-cuadrada {
+    border: 2px white solid;
+    overflow: hidden; }
+    main section .contenedor_portfolio_paisajes .foto-cuadrada img {
+      width: 100%;
+      height: auto;
+      transition: transform 1s ease-out;
+      opacity: 0.7;
+      object-fit: cover; }
+      main section .contenedor_portfolio_paisajes .foto-cuadrada img:hover {
+        transform: scale(1.2);
+        opacity: 1; }
+  main section .contenedor_portfolio_paisajes .foto-horiz-1 {
+    grid-area: foto-horiz-1; }
+  main section .contenedor_portfolio_paisajes .foto-horiz-2 {
+    grid-area: foto-horiz-2; }
+  main section .contenedor_portfolio_paisajes .foto-horiz-3 {
+    grid-area: foto-horiz-3; }
+  main section .contenedor_portfolio_paisajes .foto-horiz-4 {
+    grid-area: foto-horiz-4; }
+  main section .contenedor_portfolio_paisajes .foto-horiz-5 {
+    grid-area: foto-horiz-5; }
+  main section .contenedor_portfolio_paisajes .foto-horiz-6 {
+    grid-area: foto-horiz-6; }
+  main section .contenedor_portfolio_paisajes .foto-horiz-7 {
+    grid-area: foto-horiz-7; }
+  main section .contenedor_portfolio_paisajes .foto-horiz-8 {
+    grid-area: foto-horiz-8; }
+  main section .contenedor_portfolio_paisajes .foto-vert-1 {
+    grid-area: foto-vert-1; }
+  main section .contenedor_portfolio_paisajes .foto-vert-2 {
+    grid-area: foto-vert-2; }
+  main section .contenedor_portfolio_paisajes .foto-cuad-1 {
+    grid-area: foto-cuad-1; }
+  main section .contenedor_portfolio_paisajes .foto-cuad-2 {
+    grid-area: foto-cuad-2; }
+  main section .contenedor_portfolio_paisajes .foto-cuad-3 {
+    grid-area: foto-cuad-3; }
+  main section .contenedor_portfolio_paisajes .foto-cuad-4 {
+    grid-area: foto-cuad-4; }
+  main section .contenedor_portfolio_paisajes .foto-cuad-5 {
+    grid-area: foto-cuad-5; }
+  main section .contenedor_portfolio_paisajes .foto-cuad-6 {
+    grid-area: foto-cuad-6; }
+  main section .contenedor_portfolio_paisajes .foto-cuad-7 {
+    grid-area: foto-cuad-7; }
+  main section .contenedor_portfolio_paisajes .foto-cuad-8 {
+    grid-area: foto-cuad-8; }
+  main section .contenedor_portfolio_paisajes .foto-cuad-9 {
+    grid-area: foto-cuad-9; }
+  main section .contenedor_portfolio_paisajes .foto-cuad-10 {
+    grid-area: foto-cuad-10; }
+  main section .contenedor_portfolio_paisajes .foto-cuad-11 {
+    grid-area: foto-cuad-11; }
+  main section .contenedor_portfolio_paisajes .foto-cuad-12 {
+    grid-area: foto-cuad-12; }
+  main section .contenedor_portfolio_paisajes .foto-cuad-13 {
+    grid-area: foto-cuad-13; }
+  main section .contenedor_portfolio_paisajes .foto-cuad-14 {
+    grid-area: foto-cuad-14; }
+  main section .contenedor_portfolio_paisajes .foto-cuad-15 {
+    grid-area: foto-cuad-15; }
+  main section .contenedor_portfolio_paisajes .foto-cuad-16 {
+    grid-area: foto-cuad-16; }
 
-main section .foto-horizontal {
-  border: 2px white solid;
-  overflow: hidden; }
-  main section .foto-horizontal img {
-    width: 100%;
-    height: auto;
-    transition: transform 1s ease-out;
-    opacity: 0.7;
-    object-fit: cover; }
-    main section .foto-horizontal img:hover {
-      transform: scale(1.2);
-      opacity: 1; }
-
-main section .foto-vertical {
-  border: 2px white solid;
-  overflow: hidden; }
-  main section .foto-vertical img {
-    height: auto;
-    width: 100%;
-    transition: transform 1s ease-out;
-    opacity: 0.7;
-    object-fit: cover; }
-    main section .foto-vertical img:hover {
-      transform: scale(1.2);
-      opacity: 1; }
-
-main section .foto-cuadrada {
-  border: 2px white solid;
-  overflow: hidden; }
-  main section .foto-cuadrada img {
-    width: 100%;
-    height: auto;
-    transition: transform 1s ease-out;
-    opacity: 0.7;
-    object-fit: cover; }
-    main section .foto-cuadrada img:hover {
-      transform: scale(1.2);
-      opacity: 1; }
-
-main section .foto-horiz-1 {
-  grid-area: foto-horiz-1; }
-
-main section .foto-horiz-2 {
-  grid-area: foto-horiz-2; }
-
-main section .foto-horiz-3 {
-  grid-area: foto-horiz-3; }
-
-main section .foto-horiz-4 {
-  grid-area: foto-horiz-4; }
-
-main section .foto-horiz-5 {
-  grid-area: foto-horiz-5; }
-
-main section .foto-horiz-6 {
-  grid-area: foto-horiz-6; }
-
-main section .foto-horiz-7 {
-  grid-area: foto-horiz-7; }
-
-main section .foto-horiz-8 {
-  grid-area: foto-horiz-8; }
-
-main section .foto-vert-1 {
-  grid-area: foto-vert-1; }
-
-main section .foto-vert-2 {
-  grid-area: foto-vert-2; }
-
-main section .foto-cuad-1 {
-  grid-area: foto-cuad-1; }
-
-main section .foto-cuad-2 {
-  grid-area: foto-cuad-2; }
-
-main section .foto-cuad-3 {
-  grid-area: foto-cuad-3; }
-
-main section .foto-cuad-4 {
-  grid-area: foto-cuad-4; }
-
-main section .foto-cuad-5 {
-  grid-area: foto-cuad-5; }
-
-main section .foto-cuad-6 {
-  grid-area: foto-cuad-6; }
-
-main section .foto-cuad-7 {
-  grid-area: foto-cuad-7; }
-
-main section .foto-cuad-8 {
-  grid-area: foto-cuad-8; }
-
-main section .foto-cuad-9 {
-  grid-area: foto-cuad-9; }
-
-main section .foto-cuad-10 {
-  grid-area: foto-cuad-10; }
-
-main section .foto-cuad-11 {
-  grid-area: foto-cuad-11; }
-
-main section .foto-cuad-12 {
-  grid-area: foto-cuad-12; }
-
-main section .foto-cuad-13 {
-  grid-area: foto-cuad-13; }
-
-main section .foto-cuad-14 {
-  grid-area: foto-cuad-14; }
-
-main section .foto-cuad-15 {
-  grid-area: foto-cuad-15; }
-
-main section .foto-cuad-16 {
-  grid-area: foto-cuad-16; }
+main section .contenedor_portfolio_retratos {
+  display: grid;
+  grid-template-columns: repear(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 5px 5px;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-areas: "foto-cuad-1 foto-cuad-2 foto-cuad-3" "foto-cuad-4 foto-cuad-5 foto-cuad-6" "foto-cuad-7 foto-cuad-8 foto-cuad-9" "foto-cuad-10 foto-cuad-11 foto-cuad-12" "foto-cuad-13 foto-cuad-14 foto-cuad-15" "foto-cuad-16 foto-cuad-17 foto-cuad-18"; }
+  main section .contenedor_portfolio_retratos .foto-cuadrada {
+    border: 2px white solid;
+    overflow: hidden; }
+    main section .contenedor_portfolio_retratos .foto-cuadrada img {
+      width: 100%;
+      height: auto;
+      transition: transform 1s ease-out;
+      opacity: 0.7;
+      object-fit: cover; }
+      main section .contenedor_portfolio_retratos .foto-cuadrada img:hover {
+        transform: scale(1.2);
+        opacity: 1; }
+  main section .contenedor_portfolio_retratos .foto-cuad-1 {
+    grid-area: foto-cuad-1; }
+  main section .contenedor_portfolio_retratos .foto-cuad-2 {
+    grid-area: foto-cuad-2; }
+  main section .contenedor_portfolio_retratos .foto-cuad-3 {
+    grid-area: foto-cuad-3; }
+  main section .contenedor_portfolio_retratos .foto-cuad-4 {
+    grid-area: foto-cuad-4; }
+  main section .contenedor_portfolio_retratos .foto-cuad-5 {
+    grid-area: foto-cuad-5; }
+  main section .contenedor_portfolio_retratos .foto-cuad-6 {
+    grid-area: foto-cuad-6; }
+  main section .contenedor_portfolio_retratos .foto-cuad-7 {
+    grid-area: foto-cuad-7; }
+  main section .contenedor_portfolio_retratos .foto-cuad-8 {
+    grid-area: foto-cuad-8; }
+  main section .contenedor_portfolio_retratos .foto-cuad-9 {
+    grid-area: foto-cuad-9; }
+  main section .contenedor_portfolio_retratos .foto-cuad-10 {
+    grid-area: foto-cuad-10; }
+  main section .contenedor_portfolio_retratos .foto-cuad-11 {
+    grid-area: foto-cuad-11; }
+  main section .contenedor_portfolio_retratos .foto-cuad-12 {
+    grid-area: foto-cuad-12; }
+  main section .contenedor_portfolio_retratos .foto-cuad-13 {
+    grid-area: foto-cuad-13; }
+  main section .contenedor_portfolio_retratos .foto-cuad-14 {
+    grid-area: foto-cuad-14; }
+  main section .contenedor_portfolio_retratos .foto-cuad-15 {
+    grid-area: foto-cuad-15; }
+  main section .contenedor_portfolio_retratos .foto-cuad-16 {
+    grid-area: foto-cuad-16; }
+  main section .contenedor_portfolio_retratos .foto-cuad-17 {
+    grid-area: foto-cuad-17; }
+  main section .contenedor_portfolio_retratos .foto-cuad-18 {
+    grid-area: foto-cuad-18; }
 
 main {
   font-family: Arial, Helvetica, sans-serif;
@@ -573,15 +585,172 @@ footer {
       padding: 5px; }
   main section .contenedor_portfolio {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     grid-gap: 5px; }
   main section .contenedor_abstracto {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(9, 1fr);
     grid-gap: 5px; }
     main section .contenedor_abstracto .contenedor_item_abstracto img {
-      opacity: 1;
-      padding: 5px; }
+      opacity: 1; }
+  main section .contenedor_portfolio_paisajes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 5px 5px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas: "foto-vert-1 foto-vert-2" "foto-vert-1 foto-vert-2" "foto-cuad-1 foto-cuad-2" "foto-cuad-3 foto-cuad-4" "foto-horiz-1 foto-horiz-1" "foto-horiz-2 foto-horiz-2" "foto-cuad-5 foto-cuad-6" "foto-cuad-7 foto-cuad-8" "foto-horiz-3 foto-horiz-3" "foto-horiz-4 foto-horiz-4" "foto-horiz-5 foto-horiz-5" "foto-cuad-9 foto-cuad-10" "foto-cuad-11 foto-cuad-12" "foto-horiz-6 foto-horiz-6" "foto-cuad-13 foto-cuad-14" "foto-horiz-7 foto-horiz-7" "foto-horiz-8 foto-horiz-8" "foto-cuad-15 foto-cuad-16";
+    width: 100%; }
+    main section .contenedor_portfolio_paisajes .foto-horizontal {
+      border: 2px white solid;
+      overflow: hidden; }
+      main section .contenedor_portfolio_paisajes .foto-horizontal img {
+        width: 100%;
+        height: auto;
+        transition: transform 1s ease-out;
+        object-fit: cover;
+        opacity: 1; }
+        main section .contenedor_portfolio_paisajes .foto-horizontal img:hover {
+          transform: scale(1.2); }
+    main section .contenedor_portfolio_paisajes .foto-vertical {
+      border: 2px white solid;
+      overflow: hidden; }
+      main section .contenedor_portfolio_paisajes .foto-vertical img {
+        height: auto;
+        width: 100%;
+        transition: transform 1s ease-out;
+        object-fit: cover;
+        opacity: 1; }
+        main section .contenedor_portfolio_paisajes .foto-vertical img:hover {
+          transform: scale(1.2); }
+    main section .contenedor_portfolio_paisajes .foto-cuadrada {
+      border: 2px white solid;
+      overflow: hidden; }
+      main section .contenedor_portfolio_paisajes .foto-cuadrada img {
+        width: 100%;
+        height: auto;
+        transition: transform 1s ease-out;
+        object-fit: cover;
+        opacity: 1; }
+        main section .contenedor_portfolio_paisajes .foto-cuadrada img:hover {
+          transform: scale(1.2);
+          opacity: 1; }
+    main section .contenedor_portfolio_paisajes .foto-vert-1 {
+      grid-area: foto-vert-1; }
+    main section .contenedor_portfolio_paisajes .foto-vert-2 {
+      grid-area: foto-vert-2; }
+    main section .contenedor_portfolio_paisajes .foto-horiz-1 {
+      grid-area: foto-horiz-1; }
+    main section .contenedor_portfolio_paisajes .foto-horiz-2 {
+      grid-area: foto-horiz-2; }
+    main section .contenedor_portfolio_paisajes .foto-horiz-3 {
+      grid-area: foto-horiz-3; }
+    main section .contenedor_portfolio_paisajes .foto-horiz-4 {
+      grid-area: foto-horiz-4; }
+    main section .contenedor_portfolio_paisajes .foto-horiz-5 {
+      grid-area: foto-horiz-5; }
+    main section .contenedor_portfolio_paisajes .foto-horiz-6 {
+      grid-area: foto-horiz-6; }
+    main section .contenedor_portfolio_paisajes .foto-horiz-7 {
+      grid-area: foto-horiz-7; }
+    main section .contenedor_portfolio_paisajes .foto-horiz-8 {
+      grid-area: foto-horiz-8; }
+    main section .contenedor_portfolio_paisajes .foto-cuad-1 {
+      grid-area: foto-cuad-1; }
+    main section .contenedor_portfolio_paisajes .foto-cuad-2 {
+      grid-area: foto-cuad-2; }
+    main section .contenedor_portfolio_paisajes .foto-cuad-3 {
+      grid-area: foto-cuad-3; }
+    main section .contenedor_portfolio_paisajes .foto-cuad-4 {
+      grid-area: foto-cuad-4; }
+    main section .contenedor_portfolio_paisajes .foto-cuad-5 {
+      grid-area: foto-cuad-5; }
+    main section .contenedor_portfolio_paisajes .foto-cuad-6 {
+      grid-area: foto-cuad-6; }
+    main section .contenedor_portfolio_paisajes .foto-cuad-7 {
+      grid-area: foto-cuad-7; }
+    main section .contenedor_portfolio_paisajes .foto-cuad-8 {
+      grid-area: foto-cuad-8; }
+    main section .contenedor_portfolio_paisajes .foto-cuad-9 {
+      grid-area: foto-cuad-9; }
+    main section .contenedor_portfolio_paisajes .foto-cuad-10 {
+      grid-area: foto-cuad-10; }
+    main section .contenedor_portfolio_paisajes .foto-cuad-11 {
+      grid-area: foto-cuad-11; }
+    main section .contenedor_portfolio_paisajes .foto-cuad-12 {
+      grid-area: foto-cuad-12; }
+    main section .contenedor_portfolio_paisajes .foto-cuad-13 {
+      grid-area: foto-cuad-13; }
+    main section .contenedor_portfolio_paisajes .foto-cuad-14 {
+      grid-area: foto-cuad-14; }
+    main section .contenedor_portfolio_paisajes .foto-cuad-15 {
+      grid-area: foto-cuad-15; }
+    main section .contenedor_portfolio_paisajes .foto-cuad-16 {
+      grid-area: foto-cuad-16; }
+  main section .contenedor_portfolio_retratos {
+    display: grid;
+    grid-template-columns: repear(1, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+    gap: 5px 5px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas: "foto-cuad-1" "foto-cuad-2" "foto-cuad-3" "foto-cuad-4" "foto-cuad-5" "foto-cuad-6" "foto-cuad-7" "foto-cuad-8" "foto-cuad-9" "foto-cuad-10" "foto-cuad-11" "foto-cuad-12" "foto-cuad-13" "foto-cuad-14" "foto-cuad-15" "foto-cuad-16" "foto-cuad-17" "foto-cuad-18"; }
+    main section .contenedor_portfolio_retratos .foto-cuadrada {
+      border: 2px white solid;
+      overflow: hidden; }
+      main section .contenedor_portfolio_retratos .foto-cuadrada img {
+        width: 100%;
+        height: auto;
+        transition: transform 1s ease-out;
+        opacity: 1;
+        object-fit: cover; }
+        main section .contenedor_portfolio_retratos .foto-cuadrada img:hover {
+          transform: scale(1.2);
+          opacity: 1; }
+    main section .contenedor_portfolio_retratos .foto-cuad-1 {
+      grid-area: foto-cuad-1; }
+    main section .contenedor_portfolio_retratos .foto-cuad-2 {
+      grid-area: foto-cuad-2; }
+    main section .contenedor_portfolio_retratos .foto-cuad-3 {
+      grid-area: foto-cuad-3; }
+    main section .contenedor_portfolio_retratos .foto-cuad-4 {
+      grid-area: foto-cuad-4; }
+    main section .contenedor_portfolio_retratos .foto-cuad-5 {
+      grid-area: foto-cuad-5; }
+    main section .contenedor_portfolio_retratos .foto-cuad-6 {
+      grid-area: foto-cuad-6; }
+    main section .contenedor_portfolio_retratos .foto-cuad-7 {
+      grid-area: foto-cuad-7; }
+    main section .contenedor_portfolio_retratos .foto-cuad-8 {
+      grid-area: foto-cuad-8; }
+    main section .contenedor_portfolio_retratos .foto-cuad-9 {
+      grid-area: foto-cuad-9; }
+    main section .contenedor_portfolio_retratos .foto-cuad-10 {
+      grid-area: foto-cuad-10; }
+    main section .contenedor_portfolio_retratos .foto-cuad-11 {
+      grid-area: foto-cuad-11; }
+    main section .contenedor_portfolio_retratos .foto-cuad-12 {
+      grid-area: foto-cuad-12; }
+    main section .contenedor_portfolio_retratos .foto-cuad-13 {
+      grid-area: foto-cuad-13; }
+    main section .contenedor_portfolio_retratos .foto-cuad-14 {
+      grid-area: foto-cuad-14; }
+    main section .contenedor_portfolio_retratos .foto-cuad-15 {
+      grid-area: foto-cuad-15; }
+    main section .contenedor_portfolio_retratos .foto-cuad-16 {
+      grid-area: foto-cuad-16; }
+    main section .contenedor_portfolio_retratos .foto-cuad-17 {
+      grid-area: foto-cuad-17; }
+    main section .contenedor_portfolio_retratos .foto-cuad-18 {
+      grid-area: foto-cuad-18; }
   main section article .frase_fotografo {
     font-size: 1rem;
     padding-left: 10px;

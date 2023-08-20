@@ -1,0 +1,63 @@
+main{
+    section{
+            .contenedor_portfolio_retratos {  
+                display: grid;
+                grid-template-columns: repear(3,1fr);
+                grid-template-rows: repeat(6,1fr);
+                
+                gap: 5px 5px;
+                grid-auto-flow:row;
+                justify-content:center;
+                align-content:center;
+                justify-items:center;
+                align-items:center;
+                grid-template-areas:
+                "foto-cuad-1 foto-cuad-2 foto-cuad-3"
+                "foto-cuad-4 foto-cuad-5 foto-cuad-6"
+                "foto-cuad-7 foto-cuad-8 foto-cuad-9"
+                "foto-cuad-10 foto-cuad-11 foto-cuad-12"
+                "foto-cuad-13 foto-cuad-14 foto-cuad-15"
+                "foto-cuad-16 foto-cuad-17 foto-cuad-18";
+            
+            
+                .foto-cuadrada{
+                    border: 2px $color_blanco solid;
+                    overflow: hidden;
+
+                    img{
+                        width: 100%;
+                        height: auto;
+                        transition:transform 1s ease-out ;
+                        opacity:0.7; 
+                        object-fit: cover;
+
+                        &:hover{
+                            transform: scale(1.2);
+                            opacity:1; 
+                        }   
+                    }
+                }
+
+                 
+                .foto-cuad-1 { grid-area: foto-cuad-1; }
+                .foto-cuad-2 { grid-area: foto-cuad-2; }
+                .foto-cuad-3 { grid-area: foto-cuad-3; }
+                .foto-cuad-4 { grid-area: foto-cuad-4; }
+                .foto-cuad-5 { grid-area: foto-cuad-5; }
+                .foto-cuad-6 { grid-area: foto-cuad-6; }
+                .foto-cuad-7 { grid-area: foto-cuad-7; }
+                .foto-cuad-8 { grid-area: foto-cuad-8; }
+                .foto-cuad-9 { grid-area: foto-cuad-9; }
+                .foto-cuad-10 { grid-area: foto-cuad-10; }
+                .foto-cuad-11 { grid-area: foto-cuad-11; }
+                .foto-cuad-12 { grid-area: foto-cuad-12; }
+                .foto-cuad-13 { grid-area: foto-cuad-13; }
+                .foto-cuad-14 { grid-area: foto-cuad-14; }
+                .foto-cuad-15 { grid-area: foto-cuad-15; }
+                .foto-cuad-16 { grid-area: foto-cuad-16; }
+                .foto-cuad-17 { grid-area: foto-cuad-17; }
+                .foto-cuad-18 { grid-area: foto-cuad-18; }
+            }
+        }
+}
+  
