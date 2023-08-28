@@ -4,7 +4,7 @@
   box-sizing: border-box; }
 
 body {
-  background-color: #EADDD7; }
+  background-color: #f5e7e1; }
 
 span {
   color: #ab4493; }
@@ -96,19 +96,30 @@ main section .contenedor_acerca_de_mis_favoritas {
         transform: scale(1.2);
         opacity: 1; }
 
-main section .acordeon-total .accordion-item .accordion-collapse .accordion-body .card {
-  margin-top: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px; }
+main section {
+  min-height: calc(100vh - 95px - 52px - 64px); }
+  main section .acordeon-total .accordion-item .accordion-header button {
+    font-family: "Kanit", sans-serif; }
+  main section .acordeon-total .accordion-item .accordion-collapse .accordion-body .card {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px; }
+    main section .acordeon-total .accordion-item .accordion-collapse .accordion-body .card .card-body .card-text {
+      font-family: "Bad Script", cursive;
+      font-size: 1.2rem; }
+    main section .acordeon-total .accordion-item .accordion-collapse .accordion-body .card .card-body .boton-ir-web {
+      background-color: #062837;
+      border-color: #062837;
+      border-style: solid;
+      border-radius: 10px; }
 
 main section .container-contacto {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
   grid-auto-columns: 1fr;
   gap: 3px 3px;
-  grid-auto-flow: row;
   justify-content: center;
   align-content: center;
   justify-items: center;
@@ -116,24 +127,21 @@ main section .container-contacto {
   grid-template-areas: "foto1 foto2" "area-contacto area-contacto"; }
   main section .container-contacto .foto1 {
     grid-area: foto1;
-    height: 0;
-    margin: 10px; }
+    margin: 10px 10px 10px 10px; }
     main section .container-contacto .foto1 img {
       border-radius: 5%;
       width: 100%;
       height: auto; }
   main section .container-contacto .foto2 {
     grid-area: foto2;
-    height: 0;
-    margin: 10px; }
+    margin: 10px 10px 10px 10px; }
     main section .container-contacto .foto2 img {
       border-radius: 5%;
       width: 100%;
       height: auto; }
   main section .container-contacto .area-contacto {
     grid-area: area-contacto;
-    height: auto;
-    margin-top: -6rem; }
+    height: auto; }
     main section .container-contacto .area-contacto .contacto {
       display: flex;
       align-items: center;
@@ -145,8 +153,9 @@ main section .contenedor_portfolio {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-gap: 10px;
-  margin: 10px; }
+  grid-gap: 40px;
+  margin: 0 auto;
+  max-width: 900px; }
   main section .contenedor_portfolio .contenedor_item_portfolio {
     display: flex;
     justify-content: space-evenly;
@@ -399,10 +408,10 @@ header .navbar-fondo {
     header .navbar-fondo .container-fluid .collapse .navbar-nav .nav-item .item-menu-a:hover {
       color: white;
       text-decoration: underline;
-      text-shadow: 1px 1px 4px #EADDD7; }
+      text-shadow: 1px 1px 4px #f5e7e1; }
 
 p {
-  font-size: 14px;
+  font-size: 16px;
   color: #0e0e0e; }
 
 h1 {
@@ -434,8 +443,9 @@ main section .fotografia_hobby {
   color: #0e0e0e; }
 
 main .carousel .carousel-inner .carousel-item .carousel-item-img {
-  object-fit: fill;
-  width: 100%; }
+  width: 100%;
+  height: 70vh;
+  object-fit: cover; }
 
 main .carousel .carousel-inner .carousel-item .carousel-caption .blanco {
   color: #dfd1cb; }
@@ -537,10 +547,16 @@ main .subFooter {
     align-items: end;
     justify-content: space-between; }
     main .subFooter .volver_arriba .volver_arriba_texto {
-      text-decoration: none;
-      color: #0e0e0e;
-      text-align: left;
+      /*
+                text-decoration: none;
+                color: #0e0e0e;
+                text-align: left;*/
       padding-left: 10px; }
+      main .subFooter .volver_arriba .volver_arriba_texto img {
+        transition: transform 0.5s ease-in-out;
+        width: 28px; }
+        main .subFooter .volver_arriba .volver_arriba_texto img:hover {
+          transform: scale(1.2); }
   main .subFooter .volver_arriba_whatsapp {
     position: sticky;
     padding-right: 10px;
@@ -574,7 +590,8 @@ footer {
   main section .contenedor_acerca_de .imagen_acerca_de_mi {
     margin-bottom: 15px; }
     main section .contenedor_acerca_de .imagen_acerca_de_mi img {
-      width: 350px;
+      max-width: 350px;
+      width: 100%;
       height: auto; }
   main section .contenedor_acerca_de_mis_favoritas {
     grid-template-columns: repeat(1, 1fr);

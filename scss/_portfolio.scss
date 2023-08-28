@@ -4,8 +4,9 @@ main{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(2, 1fr);
-            grid-gap: 10px;
-            margin: 10px;
+            grid-gap: 40px;
+            margin: 0 auto;
+            max-width: 900px;
 
             .contenedor_item_portfolio {
                 @include caja-flex(space-evenly,center,wrap,row);

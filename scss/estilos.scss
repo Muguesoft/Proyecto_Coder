@@ -54,7 +54,7 @@ header{
 }
 
 p{
-    font-size: 14px; 
+    font-size: 16px; 
     color: $color_casi_negro; 
 }
 
@@ -101,8 +101,9 @@ main{
             .carousel-inner{
                 .carousel-item{
                     .carousel-item-img{
-                        object-fit:fill;
                         width: 100%;
+                        height: 70vh;
+                        object-fit:cover;
                     }
                     .carousel-caption{
                         .blanco{
@@ -231,11 +232,22 @@ main{
             justify-content: space-between;
 
             .volver_arriba_texto{
+                /*
                 text-decoration: none;
                 color: #0e0e0e;
-                text-align: left;
+                text-align: left;*/
                 padding-left: 10px;
+
+                img{
+                    transition:transform 0.5s ease-in-out ;
+                    width: 28px;
+
+                    &:hover{
+                        transform: scale(1.2);
+                    }
+                }
               }
+
           }
         
         .volver_arriba_whatsapp{
@@ -243,7 +255,8 @@ main{
         padding-right: 10px;
         padding-bottom: 10px;
         }
-    }    
+    } 
+       
 }
 
 footer{
