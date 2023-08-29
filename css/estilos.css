@@ -444,7 +444,7 @@ main section .fotografia_hobby {
 
 main .carousel .carousel-inner .carousel-item .carousel-item-img {
   width: 100%;
-  height: 70vh;
+  height: 80vh;
   object-fit: cover; }
 
 main .carousel .carousel-inner .carousel-item .carousel-caption .blanco {
@@ -587,6 +587,11 @@ footer {
     header .navbar .container-fluid .cristian-mouguelar img {
       width: 59px;
       height: auto; }
+  main section .carousel .carousel-inner .carousel-item .carousel-item-img {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+    }
   main section .contenedor_acerca_de .imagen_acerca_de_mi {
     margin-bottom: 15px; }
     main section .contenedor_acerca_de .imagen_acerca_de_mi img {

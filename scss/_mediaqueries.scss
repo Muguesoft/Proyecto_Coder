@@ -29,6 +29,17 @@
 
     main{
       section{
+        .carousel{
+          .carousel-inner{
+              .carousel-item{
+                  .carousel-item-img{
+                      width: 100%;
+                      height: 40vh;
+                      object-fit:cover;
+                  }
+              }
+          }
+        }
         .contenedor_acerca_de{
           .imagen_acerca_de_mi{
             margin-bottom: 15px;
