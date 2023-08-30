@@ -62,18 +62,22 @@
         }
 
         .contenedor_portfolio {
-          grid-template-columns: repeat(1, 1fr);
-          grid-template-rows: repeat(4, 1fr);
+          grid-template-columns: repeat(1, auto);
+          grid-template-rows: repeat(4, auto);
           grid-gap: 5px;
+          margin-left: 5px;
+          margin-right: 5px;
         }
 
         .contenedor_abstracto {
-          grid-template-columns: repeat(1, 1fr);
-          grid-template-rows: repeat(9, 1fr);
-          grid-gap: 5px;
+          grid-template-columns: repeat(1, auto);
+          grid-template-rows: repeat(9, auto);
+          //grid-gap: 5px;
+          margin-left: 5px;
+          margin-right: 5px;
+
           .contenedor_item_abstracto img {
             opacity: 1;
-            //border: 2px $color_blanco solid;
           }
         }
 
@@ -199,6 +203,8 @@
           grid-template-rows: repeat(18,1fr);
           
           gap: 5px 5px;
+          margin-left: 5px;
+          margin-right: 5px;
           grid-auto-flow:row;
           justify-content:center;
           align-content:center;

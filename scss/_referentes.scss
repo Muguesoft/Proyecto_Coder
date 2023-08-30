@@ -5,11 +5,15 @@ main{
         .acordeon-total{
             .accordion-item{
                 .accordion-header{
+                    
                     button{
+                        color:$color_fondo_oscuro;
                         font-family: $letra_formal;
                     }
                 }
                 .accordion-collapse{
+                    background-color: $color_fondo_charlemos;
+
                     .accordion-body{
                         .card{
                             margin-top: 10px;
@@ -19,7 +23,8 @@ main{
                             .card-body{
                                 .card-text{
                                     font-family: $letra_script;
-                                    font-size: 1.2rem;
+                                    font-size: 1.1rem;
+                                    color: $color_gris_mas_claro;
                                 }
                                 .boton-ir-web{
                                     background-color: $color_fondo_oscuro; 
