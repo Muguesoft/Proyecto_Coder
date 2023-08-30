@@ -38,7 +38,8 @@ main{
                     font-family: $letra_formal;
                     border-radius: 5px;
                     letter-spacing: 1px;
-                    text-shadow: $sombra_negra;                
+                    text-shadow: $sombra_negra;
+                    font-size: medium;                
                 
                     &:hover{
                         background-color: $color_casi_blanco;

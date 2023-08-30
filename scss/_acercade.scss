@@ -1,5 +1,7 @@
 main{
     section{
+        min-height: calc(100vh - 95px - 52px - 64px);
+
         .contenedor_acerca_de{
             @include caja-flex(space-evenly,center,wrap,row);
 
@@ -35,6 +37,7 @@ main{
                     font-family: $letra_formal;
                     border-radius: 5px;
                     letter-spacing: 1px;
+                    font-size: medium;
 
                     &:hover{
                         background-color: $color_casi_blanco;
