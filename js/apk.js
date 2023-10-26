@@ -54,7 +54,7 @@ export const apk = () => {
     mainElement.appendChild(sectionElement);
 
     // Hay un usuario logueado?
-    const userLogged = JSON.parse(localStorage.getItem('userLogged'));
+    const userLogged = JSON.parse(localStorage.getItem('userLogged'))
     const bIngresar = document.querySelector('.item-menu-ingresar')
     const bCerrarSesion = document.querySelector('.item-menu-cerrar-sesion')
 
