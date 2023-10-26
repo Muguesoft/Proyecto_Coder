@@ -75,6 +75,14 @@ main section .contenedor_acerca_de {
       main section .contenedor_acerca_de .contenedor_texto_acerca_de_mi .texto_acerca_de_mi em {
         font-weight: 700; }
 
+main section .p_logged {
+  text-align: right;
+  font-family: "Kanit", sans-serif;
+  font-size: .8rem;
+  background-color: #062837;
+  color: white;
+  padding-right: 15px; }
+
 main section .contenedor_acerca_de_mis_favoritas {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -83,21 +91,67 @@ main section .contenedor_acerca_de_mis_favoritas {
     height: 0;
     padding-bottom: 100%;
     overflow: hidden;
-    margin: 5px; }
+    margin: 5px;
+    position: relative;
+    text-align: center;
+    /*display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                align-items: flex-end;*/ }
     main section .contenedor_acerca_de_mis_favoritas .contenedor_item_acerca_de_mis_favoritas img {
       width: 100%;
       height: auto;
-      opacity: .7;
       border-radius: 5px;
-      object-fit: cover;
-      transition: transform 1s ease-out; }
+      object-fit: cover; }
       main section .contenedor_acerca_de_mis_favoritas .contenedor_item_acerca_de_mis_favoritas img:hover {
         border-radius: 5px;
         border-style: solid;
         border-width: 3px;
-        border-color: white;
-        transform: scale(1.2);
-        opacity: 1; }
+        border-color: white; }
+    main section .contenedor_acerca_de_mis_favoritas .contenedor_item_acerca_de_mis_favoritas .contenedor_impresion_foto {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      background: transparent;
+      color: white;
+      /* Color del texto */
+      /*padding-top: 6px;
+                    padding-bottom: 6px;
+                    padding-left: 12px;
+                    padding-right: 12px;*/
+      text-align: left;
+      text-decoration: none; }
+      main section .contenedor_acerca_de_mis_favoritas .contenedor_item_acerca_de_mis_favoritas .contenedor_impresion_foto h4 {
+        color: white;
+        font-family: "Kanit", sans-serif;
+        text-shadow: 1px 1px 2px black; }
+      main section .contenedor_acerca_de_mis_favoritas .contenedor_item_acerca_de_mis_favoritas .contenedor_impresion_foto p {
+        color: white;
+        font-family: "Kanit", sans-serif;
+        text-shadow: 1px 1px 2px black; }
+    main section .contenedor_acerca_de_mis_favoritas .contenedor_item_acerca_de_mis_favoritas .btn-imprimir {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: transparent;
+      color: white;
+      border: 1px solid white;
+      padding-top: 6px;
+      padding-bottom: 6px;
+      padding-left: 12px;
+      padding-right: 12px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 1.3rem;
+      cursor: pointer;
+      border-radius: 4px;
+      text-shadow: 1px 1px 2px black;
+      box-shadow: 1px 1px 2px black; }
+      main section .contenedor_acerca_de_mis_favoritas .contenedor_item_acerca_de_mis_favoritas .btn-imprimir:hover {
+        background: #f5e7e1;
+        color: #062837;
+        text-shadow: 1px 1px 2px white;
+        box-shadow: 1px 1px 2px white; }
 
 main section {
   min-height: calc(100vh - 95px - 52px - 64px); }

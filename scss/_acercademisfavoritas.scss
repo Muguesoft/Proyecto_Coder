@@ -1,5 +1,13 @@
 main{
     section{
+        .p_logged{
+            text-align: right;
+            font-family: $letra_formal;
+            font-size: .8rem;
+            background-color: $color_fondo_oscuro;
+            color: $color_blanco;
+            padding-right: 15px;
+        }
         .contenedor_acerca_de_mis_favoritas{
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -10,14 +18,21 @@ main{
                 padding-bottom: 100%;
                 overflow: hidden;
                 margin: 5px;
+                position: relative;
+                text-align: center;
+                /*display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                align-items: flex-end;*/
                 
+
                 img {
                     width: 100%;
                     height: auto;
-                    opacity: .7;
+                    //opacity: .7;
                     border-radius: 5px; 
                     object-fit: cover;
-                    transition:transform 1s ease-out ;
+                    //transition:transform 1s ease-out ;
 
                     &:hover{
                         //padding: 0px;
@@ -25,9 +40,65 @@ main{
                         border-style: solid; 
                         border-width: 3px; 
                         border-color: white; 
-                        transform: scale(1.2);
-                        opacity:1;
+                        //transform: scale(1.2);
+                        //opacity:1;
                     }
+                }
+
+                .contenedor_impresion_foto{
+                    position: absolute;
+                    bottom: 10px;
+                    left: 10px;
+                    //transform: translateX(-50%);
+                    background: transparent;
+                    color: white; /* Color del texto */
+                    //border: 1px solid white; /* Borde del botón */
+                    //padding: 10px 20px; /* Espaciado interno (ajusta según tus necesidades) */
+                    /*padding-top: 6px;
+                    padding-bottom: 6px;
+                    padding-left: 12px;
+                    padding-right: 12px;*/
+                    text-align: left;
+                    text-decoration: none;
+
+                    h4 {
+                        color: $color_blanco;
+                        font-family: $letra_formal;
+                        text-shadow: $sombra_negra;
+                    }
+
+                    p {
+                        color: $color_blanco;
+                        font-family: $letra_formal;
+                        text-shadow: $sombra_negra;
+                    }
+                }
+                .btn-imprimir {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    background: transparent;
+                    color: $color_blanco;
+                    border: 1px solid $color_blanco; 
+                    padding-top: 6px;
+                    padding-bottom: 6px;
+                    padding-left: 12px;
+                    padding-right: 12px;
+                    text-align: center;
+                    text-decoration: none;
+                    font-size: 1.3rem;
+                    cursor: pointer;
+                    border-radius: 4px;
+                    text-shadow: $sombra_negra;
+                    box-shadow: $sombra_negra;
+
+                    &:hover {
+                    background: $color_fondo_claro;
+                    color: $color_fondo_oscuro;
+                    text-shadow: $sombra_blanca;
+                    box-shadow: $sombra_blanca;
+                    }
+                    
                 }
             }  
         }
