@@ -4,7 +4,6 @@ import { photoContainer } from "./components/photo-container.js";
 import { loginUsuario } from "./helpers/loginUser.js";
 import { logoutUsuario } from "./helpers/logoutUser.js";
 
-
 export const apk = () => {
 
     // Se utilizara el LocalStorage para almacenar los datos de los
@@ -57,18 +56,18 @@ export const apk = () => {
     const userLogged = JSON.parse(localStorage.getItem('userLogged'))
     const bIngresar = document.querySelector('.item-menu-ingresar')
     const bCerrarSesion = document.querySelector('.item-menu-cerrar-sesion')
-
+    
+    // Defino un evento para cerrar la sesion de usuario.
+    bCerrarSesion.addEventListener('click',logoutUsuario)
+    
     if (userLogged) {
         // Invisibilizo la opcion de INGRESAR.
         bIngresar.classList.toggle('invisible');
-        
-        // Defino un evento para cerrar la sesion de usuario.
-        bCerrarSesion.addEventListener('click',logoutUsuario)
 
         // Parrafo donde se muestra el usuario logueado.
         const pElement = document.querySelector('.p_logged')
-        console.log(userLogged)
         pElement.textContent = `Usuario: ${userLogged}`
+
     } else {
         // Invisibiliza la opcion de cerrar sesion de la NAV-BAR.
         bCerrarSesion.classList.toggle('invisible');

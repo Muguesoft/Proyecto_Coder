@@ -1,7 +1,7 @@
 import { popMessage } from "./sweetalert.js";
 
 export const logoutUsuario = () => {
-
+    alert('logout')
     popMessage('Sesión de usuario finalizada','success',true,3000);
 
     // Parrafo donde se muestra el usuario logueado.
