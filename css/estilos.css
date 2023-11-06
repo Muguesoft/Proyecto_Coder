@@ -152,6 +152,30 @@ main section .contenedor_acerca_de_mis_favoritas {
         color: #062837;
         text-shadow: 1px 1px 2px white;
         box-shadow: 1px 1px 2px white; }
+    main section .contenedor_acerca_de_mis_favoritas .contenedor_item_acerca_de_mis_favoritas .count-btn-imprimir {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: transparent;
+      color: white;
+      border: 1px solid white;
+      padding-top: 6px;
+      padding-bottom: 6px;
+      padding-left: 12px;
+      padding-right: 12px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 1.3rem;
+      border-radius: 4px;
+      text-shadow: 1px 1px 2px black;
+      box-shadow: 1px 1px 2px black; }
+
+#contador-foto-carrito {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 4px 8px;
+  font-size: 14px; }
 
 main section {
   min-height: calc(100vh - 95px - 52px - 64px); }
@@ -473,6 +497,13 @@ header .navbar-fondo {
       color: white;
       text-decoration: underline;
       text-shadow: 1px 1px 4px #f5e7e1; }
+
+#contador-carrito {
+  background-color: #10497F;
+  color: white;
+  border-radius: 50%;
+  padding: 4px 8px;
+  font-size: 14px; }
 
 p {
   font-size: 16px;

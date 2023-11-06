@@ -17,4 +17,5 @@ export const logoutUsuario = () => {
 
     // Elimina el LocalStorage.
     localStorage.removeItem("userLogged");
+    
 }

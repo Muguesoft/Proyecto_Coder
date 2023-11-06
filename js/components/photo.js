@@ -1,3 +1,5 @@
+import { handlePhotoPrint } from "./handlePhotoPrint.js";
+
 export const photoForm = (props) => {
 
     let { id, name, description, thumbnail, price } = props;
@@ -11,9 +13,13 @@ export const photoForm = (props) => {
             <p>${description} - Precio impresión: $${price}</p>
         </div>
         <a data-id=${id} class="btn-imprimir">+</a>
+        <p class="count-btn-imprimir">0</p>
+        </div>
         `;
 
-    //const photoPrint = div.querySelector('.btn-imprimir');
+    const photoPrint = div.querySelector('.btn-imprimir');
+    console.log(photoPrint);
+    photoPrint.addEventListener('click', () => handlePhotoPrint(props));
 
 
     return div;

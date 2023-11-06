@@ -1,11 +1,10 @@
-import { photosdata } from "./helpers/data.js";
+import { photoData } from "./helpers/getPhotoData.js";
 import { usersdata } from "./helpers/data.js";
-import { photoContainer } from "./components/photo-container.js";
 import { loginUsuario } from "./helpers/loginUser.js";
 import { logoutUsuario } from "./helpers/logoutUser.js";
 
 export const apk = () => {
-
+   
     // Se utilizara el LocalStorage para almacenar los datos de los
     // usuarios previamente cargados.
     // Esta no es una buena practica //
@@ -73,7 +72,7 @@ export const apk = () => {
         bCerrarSesion.classList.toggle('invisible');
     }
 
-    // Crea las Card con las FOTOS dinamicamente.
-    divElement.append(photoContainer({ photographs: photosdata }));
-    
+    // Llamada a la funcion que crea los items
+    // con las fotografias.
+    photoData(divElement);
 }
