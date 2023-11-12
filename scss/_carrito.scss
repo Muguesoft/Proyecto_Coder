@@ -1,0 +1,39 @@
+.contenedor_totales_y_boton{
+    display: flex;
+    background-color: $color_gris_mas_claro;
+    padding-top: 10px ;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+
+    .pesos_subtotal, .pesos_iva, .pesos_total{
+        font-family: $letra_formal;
+        color: $color_casi_blanco;
+        text-shadow: $sombra_negra;
+    }
+
+    .boton_pagar {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 100px;
+        //bottom: 30px;
+        //left: 50%;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 48px;
+        padding-right: 48px;
+        //color: $color_fondo_charlemosl;
+        //background-color: $color_fondo_charlemos;
+        text-decoration: none;
+        //border-color:$color_azul_claro;
+        //border-width: 2px;
+        //border-style: solid ;
+        font-family: $letra_formal;
+        border-radius: 10px;
+        letter-spacing: 1px;
+        font-size: medium;
+    }
+}

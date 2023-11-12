@@ -1,4 +1,5 @@
 import { photoContainer } from "../components/photo-container.js";
+import { loadCart } from "./loadShoppingCart.js";
 
 export const photoData = (divElement) => {
     
@@ -16,9 +17,12 @@ export const photoData = (divElement) => {
     .then(data => {
         // Crea los DIVs usando la funcion photoContainer
         divElement.append(photoContainer({ photographs: data.photo }));
+
+        loadCart();
+
     })
     .catch(error => {
         // Manejar el error
-        console.error(error)
-      })
+        return error
+    })
 }

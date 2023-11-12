@@ -1,3 +1,4 @@
+import { loadCart } from "./loadShoppingCart.js";
 import { popMessage } from "./sweetalert.js";
 
 export const loginUsuario = () => {
@@ -18,7 +19,7 @@ export const loginUsuario = () => {
         l_pos_pass = datosUsuarios.findIndex((usuarios) => usuarios.pass === pass);
         
         if (l_pos_mail >= 0 && l_pos_pass >= 0 && l_pos_mail === l_pos_pass) {
-            
+
             popMessage(`Bienvenido ${email}`,'success',true,3000);
 
             // Parrafo donde se muestra el usuario logueado.
@@ -37,6 +38,9 @@ export const loginUsuario = () => {
             
             const bCerrarSesion = document.querySelector('.item-menu-cerrar-sesion')
             bCerrarSesion.classList.toggle('invisible');
+
+            // Carga carrito existente.
+            loadCart();
 
         } else {
             popMessage('Los datos ingresados son incorrectos...','error',true,3000);

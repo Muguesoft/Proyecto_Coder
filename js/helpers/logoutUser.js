@@ -1,3 +1,4 @@
+import { loadCart } from "./loadShoppingCart.js";
 import { popMessage } from "./sweetalert.js";
 
 export const logoutUsuario = () => {
@@ -17,5 +18,6 @@ export const logoutUsuario = () => {
 
     // Elimina el LocalStorage.
     localStorage.removeItem("userLogged");
-    
+
+    loadCart();
 }
